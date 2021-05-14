@@ -42,7 +42,7 @@ pip install deeplift
 
 The pre-processed dataset for 5-fold cross validation and motif extraction is now publicaly available. You can directly download the dataset from [Google Drive](https://drive.google.com/drive/folders/1kNMrZgsceA_ZuwhEDjEeiA3eSBHix2Cv?usp=sharing)
 
-After downloading the dataset, please make sure the directory looks like this: 
+After downloading the dataset, please make sure to put all the folders in the the directory:`` dataset `` and make them looks like this: 
 
 
 ```
