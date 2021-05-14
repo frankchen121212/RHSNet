@@ -1,0 +1,25 @@
+{
+  "dataset":        "human_science_2019",
+  "num_data":       40000,
+  "max_length":     1000,
+  "min_length":     500,
+  "model":          "Random_Guess",
+  "log_dir":        "logs",
+  "output_dir":     "output",
+  "output_prefix":  "Random_Guess",
+
+  "input_length":1000,
+  "input_height":4,
+  "data_augmentation":0,
+  "attention":0,
+  "equivariant":0,
+  "get_distribution":0,
+  "get_line_comparison":1,
+  "dp_rate":0,
+  "trails":1,
+  "folds":5,
+
+  "reinforce_train":0,
+  "init_weight":0,
+  "loss":0
+}

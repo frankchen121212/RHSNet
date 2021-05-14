@@ -1,0 +1,30 @@
+{
+  "dataset":        "nature_genetics_2008",
+  "num_data":       40000,
+  "max_length":     1000,
+  "min_length":     1000,
+  "model":          "Equivariant_CNN",
+  "log_dir":        "logs",
+  "output_dir":     "output",
+  "output_prefix":  "Equivariant_CNN_WITHOUT-AUG",
+
+  "input_length":997,
+  "input_height":4,
+  "data_augmentation":0,
+  "get_distribution":0,
+  "get_line_comparison":1,
+  "equivariant":1,
+
+  "dp_rate":0.1,
+
+  "trails":4,
+  "folds":5,
+  "epochs":100,
+  "batch_size":64,
+  "lr":0.001,
+
+  "init_weight":0,
+  "reinforce_train":0,
+  "loss":"binary_crossentropy"
+
+}
