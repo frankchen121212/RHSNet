@@ -97,10 +97,11 @@ python 5_fold_cross_validation.py experiments/human_science_2019/1000_4/RHSNet/a
 
 ```
 
-### Train RHSNet-chip on Icelandic Human Dataset
+### Train RHSNet-chip on Icelandic Human Dataset with sexual difference
 
 ```
-python 5_fold_cross_validation.py experiments/human_science_2019/1000_4/RHSNet/reinforce_chip_seq.json
+python 5_fold_cross_validation.py experiments/maternal_science_2019/1000_4/RHSNet/reinforce_chip_seq.json
+python 5_fold_cross_validation.py experiments/paternal_science_2019/1000_4/RHSNet/reinforce_chip_seq.json
 
 ```
 
