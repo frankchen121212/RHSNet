@@ -111,11 +111,16 @@ python 5_fold_cross_validation.py experiments/26_population/EUR.json
 python 5_fold_cross_validation.py experiments/26_population/SAS.json
 ```
 
+
+## Trained Model weights
+
+The trained model weights are also available in the folder ``model`` from [Google Drive](https://drive.google.com/drive/folders/1OhQXkUqQnyQp2IFE6buZRKr4yEMHvatf?usp=sharing)
+
+
 ## Important Motif Extraction
 <div align="center">
     <img src="figures/figure_2.png", width="800">
 </div>
-
 Our moitf extraction method is pretty much flexible, you can simple run (Take HapMap II Dataset as example):
 
 ```
