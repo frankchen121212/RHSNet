@@ -14,27 +14,23 @@ State-of-the-art results are achieved on challenging benchmark datasets across d
 ## Environment
 The code is developed using python 3.6 on Ubuntu 16.04. CUDA version is set to be 10.2. NVIDIA GPUs are needed. The code is developed and tested using 2 NVIDIA TITAN GPU cards. Other platforms or GPU cards are not fully tested.
 
+Make sure to create the virtual environment by setting:
+
+```
+conda create -n rhsnet python=3.6
+source activate rhsnet
+```
+
 Before running the experiments, pleas make sure that you have the following requirements:
-
+`` tensorflow-gpu==1.12.0``,`` keras==2.2.4``,`` cudatoolkit==9.0``,and `` cudnn=7.1.2``. You can install the dependence by running:
 ```
-tensorflow == 1.12.0
-keras = 2.2.4
-deeplift
-docopt
-tqdm
-pathos
-numpy
-scipy
-json
-pandas
-seaborn
-
+conda install tensorflow-gpu==1.12.0 keras==2.2.4 cudatoolkit==9.0 cudnn=7.1.2 h5py
 ```
 
-To install deeplift, pleas run the following:
+To install other required packages, please run the following:
 
-```unix
-pip install deeplift
+```
+pip install -r requirements.txt
 ```
 
 

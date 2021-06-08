@@ -1,3 +1,6 @@
+# @Author  : Yu Li & Siyuan Chen
+# @Software: PyCharm
+
 import keras.backend as K
 from keras.engine.topology import Layer
 import numpy as np
@@ -89,14 +92,11 @@ class Multiheads_Attention(Layer):
         #
             -
         """
-        # 如果只传入Q_seq,K_seq,V_seq，那么就不做Mask
-        # 如果同时传入Q_seq,K_seq,V_seq,Q_len,V_len，那么对多余部分做Mask
         if len(QKVs) == 3:
             Q_seq, K_seq, V_seq = QKVs
             Q_len, V_len = None, None
         elif len(QKVs) == 5:
             Q_seq, K_seq, V_seq, Q_len, V_len = QKVs
-        # 对Q、K、V做线性变换，以Q为例进行说明
         # Q_seq.shape=[batch_size,Q_sequence_length,Q_embedding_dim]
         # self.WQ.shape=[Q_embedding_dim,self.output_dim]=[Q_embedding_dim,self.multiheads*self.head_dim]
         Q_seq = K.dot(Q_seq,

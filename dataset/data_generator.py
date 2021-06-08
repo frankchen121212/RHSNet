@@ -1,3 +1,6 @@
+# @Author  : Yu Li & Siyuan Chen
+# @Software: PyCharm
+
 import json as js
 import pathos,sys,os
 from tqdm import tqdm

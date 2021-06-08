@@ -1,3 +1,5 @@
+# @Author  : Yu Li & Siyuan Chen
+# @Software: PyCharm
 import os,sys
 root = os.path.dirname(os.path.dirname(__file__))
 sys.path.insert(0, root)

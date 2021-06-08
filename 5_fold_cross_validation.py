@@ -1,6 +1,9 @@
 """
 Usage: train <json_file>
 """
+# @Author  : Yu Li & Siyuan Chen
+# @Software: PyCharm
+
 
 import docopt
 from dataset.CHIP_utils import CHIP_seq_hg38
@@ -12,7 +15,7 @@ from keras import backend as K
 
 root = os.path.dirname(os.path.dirname(__file__))
 sys.path.insert(0, root)
-os.environ["CUDA_VISIBLE_DEVICES"] = '1'
+os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 def train(args, config):
     # Get the data
     X, Y, L = None, None, None

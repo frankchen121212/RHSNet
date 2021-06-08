@@ -1,12 +1,12 @@
 import os,sys
-from lib.vis import *
+import numpy as np
 from dataset.data_generator import _26_Population_generator,\
     Chromosome_2019_generator,\
     Nature_Genetics_2008_generator,Nature_2020_generator,Yeast_2008_generator
 from dataset.mouse_generator import Mouse_Cell_2016_generator
 from dataset.transforms import cropping
+from tqdm import tqdm
 
-from data.nature2020_data_generator import *
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 data_root = os.path.join(root,'data')
 dataset_root = os.path.join(root,'dataset')
@@ -50,8 +50,6 @@ def Nature_Genetics_2008(args):
 
 def Nature_2020(args):
     summary_path = os.path.join(data_root, 'nature2020.json')
-    if not os.path.exists(summary_path):
-        get_nature2020_summary_data()
 
     root_feature = os.path.join(dataset_root, args["dataset"],
                                 str(args["max_length"]))
@@ -75,8 +73,6 @@ def Chromosome_Human_Science_2019(args):
         summary_path = os.path.join(data_root, 'paternal_maternal.json')
         type = "paternal_maternal"
 
-    # if not os.path.exists(summary_path):
-    #     get_summary_data(type=type)
     root_feature = os.path.join(dataset_root, args["dataset"],"Chromosome_Data")
     if not os.path.exists(root_feature):
         X, Y, L = Chromosome_2019_generator(args,summary_path,root_feature)

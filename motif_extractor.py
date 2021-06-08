@@ -1,7 +1,8 @@
 """
 Usage: motif_extractor <json_file>
 """
-
+# @Author  : Yu Li & Siyuan Chen
+# @Software: PyCharm
 
 import scipy.signal as signal
 from lib.classification_models import *

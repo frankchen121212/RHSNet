@@ -1,3 +1,6 @@
+# @Author  : Yu Li & Siyuan Chen
+# @Software: PyCharm
+
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import matplotlib

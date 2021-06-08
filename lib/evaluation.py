@@ -1,3 +1,5 @@
+# @Author  : Yu Li & Siyuan Chen
+# @Software: PyCharm
 import json as js
 import numpy as np
 import scipy.stats as stats

@@ -1,3 +1,6 @@
+# @Author  : Yu Li & Siyuan Chen
+# @Software: PyCharm
+
 from datetime import datetime
 from keras.callbacks import TensorBoard
 from keras.models import model_from_yaml

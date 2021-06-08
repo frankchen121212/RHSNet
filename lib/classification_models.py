@@ -199,7 +199,7 @@ def Ensemble_SeqModel(epochs,args, loss):
 
     # CHIP seq Feature
     if args["chip_seq"]:
-        chip_inpt = Input(shape=(15,))
+        chip_inpt = Input(shape=(18,))
         chip_x = Dense(50, name="chip_first_layer")(chip_inpt)
         chip_x = Lambda(lambda x: K.dropout(x, level=args["dp_rate"]))(chip_x)
         feature_chip = Dense(4, name="chip_second_layer", activation="relu")(chip_x)

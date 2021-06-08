@@ -1,3 +1,6 @@
+# @Author  : Yu Li & Siyuan Chen
+# @Software: PyCharm
+
 import keras
 from keras.initializers import Constant
 import keras.backend as K

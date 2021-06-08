@@ -1,4 +1,5 @@
-import tflearn
+# @Author  : Yu Li & Siyuan Chen
+# @Software: PyCharm
 from lib.classification_models import *
 from lib.function import *
 from dataset.data_utils import *
