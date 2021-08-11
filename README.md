@@ -1,7 +1,7 @@
 # RHSNet
 
 ## Introduction
-This is the program implementation of the paper: [*Deep learning identifies and quantifies the recombination hotspot determinants*](). 
+This is the program implementation of the paper: [*Deep learning identifies and quantifies the recombination hotspot determinants*](). (currently under review)
 
 State-of-the-art results are achieved on challenging benchmark datasets across different populations, sexes , and speceis. You can reproduce our results using this repo.
 
