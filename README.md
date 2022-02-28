@@ -152,5 +152,5 @@ After running the above command, you should get a dir named ``/motifs`` and the 
 
 If you use our code or models in your research, please cite with:
 ```
-Our Paper in bibtex
+Li, Y., Chen, S., Rapakoulia, T., Kuwahara, H., Yip, K. Y., & Gao, X. (2021). Deep learning identifies and quantifies recombination hotspot determinants. bioRxiv.
 ```
