@@ -5,6 +5,7 @@ from lib.Attention_core import *
 from lib.loss import get_loss_function
 from keras.models import Sequential,Model
 from keras.layers import concatenate,Conv1D,Lambda,MaxPool1D,GlobalMaxPool1D,Dense,AveragePooling1D
+from keras.layers import BatchNormalization
 from keras.layers import Input,Flatten,Bidirectional,GRU,Embedding
 
 from keras.regularizers import l2
@@ -195,7 +196,9 @@ def Ensemble_SeqModel(epochs,args, loss):
 
     # Extra Features
     inputs   = [seq_inpt]
-    features = [feature_seq]
+    seq_features_bn = BatchNormalization()(feature_seq)
+
+    features = [seq_features_bn]
 
     # CHIP seq Feature
     if args["chip_seq"]:
@@ -203,11 +206,14 @@ def Ensemble_SeqModel(epochs,args, loss):
         chip_x = Dense(50, name="chip_first_layer")(chip_inpt)
         chip_x = Lambda(lambda x: K.dropout(x, level=args["dp_rate"]))(chip_x)
         feature_chip = Dense(4, name="chip_second_layer", activation="relu")(chip_x)
+        chip_features_bn = BatchNormalization()(feature_chip)
+
         inputs.append(chip_inpt)
-        features.append(feature_chip)
+        features.append(chip_features_bn)
 
     # Connect features
     final_features = concatenate(features)
+
     output = Dense(2, activation="softmax")(final_features)
 
     model = Model(inputs=inputs, outputs=output)
