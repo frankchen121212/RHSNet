@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ## Dataset Construction
 
-The pre-processed dataset for 5-fold cross validation and motif extraction is now publicaly available. You can directly download the dataset from [Google Drive](https://drive.google.com/drive/folders/1dUY9ZJGexdVGkmDkWhljhTXPPEBRN2wG?usp=sharing)
+The pre-processed dataset for 5-fold cross validation and motif extraction is now publicaly available. You can directly download the dataset from [Google Drive]([https://drive.google.com/drive/folders/1dUY9ZJGexdVGkmDkWhljhTXPPEBRN2wG?usp=sharing](https://drive.google.com/drive/folders/1o8NfrIcygKcTQ0CJOHHvP-Z0wro7_SzY?usp=drive_link))
 
 After downloading the dataset, please make sure to put all the folders in the the directory:`` dataset `` and make them looks like this: 
 
@@ -44,11 +44,6 @@ After downloading the dataset, please make sure to put all the folders in the th
 ```
 $ {RHSNet-master}
 |-- dataset
-  ├── AFR
-  ├── AMR
-  ├── EAS
-  ├── EUR
-  ├── SAS
   ├── human_science_2019
   ├── maternal_science_2019
   ├── paternal_science_2019
